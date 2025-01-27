@@ -71,7 +71,7 @@ const CypherText = ({ textList, delay, ...props }) => {
       setTimeout(next, delay)
     })
 
-    textIndex = (textIndex + 1) % textList.length
+    textIndex = (textIndex + Math.floor(Math.random() * textList.length) % textList.length
   }
 
   useEffect(() => {
